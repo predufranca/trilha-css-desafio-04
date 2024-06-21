@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #23272A;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1em;
+}
+
+header {
+    background: url("./images/header-background.png") top center no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    padding: 3em 1.5em;
+    gap: 1.5em;
+    color: #fff;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: 800;
+}
+
+h2.font-style {
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2em;
+}
+
+header .button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+header .button-container :nth-child(n) {
+    border-radius: 10em;
+    display: block;
+    text-decoration: none;
+    padding: 0.8em 1em;
+    text-align: center;
+}
+
+header .button-container :nth-child(odd) {
+    background: #fff;
+    color: #23272A;
+}
+
+header .button-container :nth-child(even) {
+    background: #23272A;
+    color: #fff;
+}
+
+section.section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5em;
+    gap: 1.5em;
+}
+
+section.section-container img {
+    display: block;
+    width: 100%;
+}
+
+article.section-content {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em;
+    gap: 1em;
+}
+
+footer {
+    background: #23272A;
+    padding: 1.5em;
+    text-align: center;
+}
+
+footer svg {
+    width: 50%;
+}
+
+@media (min-width: 768px) {
+
+    header {
+        padding: 3em 6em;
+    }
+
+    header .button-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    h2.font-style {
+        text-align: center;
+    }
+
+    section.section-container {
+        flex-direction: row;
+    }
+
+    section.section-container img {
+        display: block;
+        width: 50vw;
+    }
+
+    article.section-content {
+        width: 50vw;
+    }
+
+    section.section-container:nth-child(5) article.section-content {
+        width: 70vw;
+    }
+
+    section.section-container:nth-child(5) article.section-content img {
+        width: 100%;
+    }
+
+}
+
+@media (min-width: 1024px) {
+
+    header {
+        padding: 6em 12em;
+    }
+
+    header h2.font-style {
+        text-align: center;
+        font-size: 2.5em;
+    }
+
+    header p, article.section-content p {
+        font-size: 1.5em;
+    }
+
+    header a {
+        font-size: 1.3em;
+    }
+
+    article.section-content h2 {
+        font-size: 2em;
+    }
+
+}
